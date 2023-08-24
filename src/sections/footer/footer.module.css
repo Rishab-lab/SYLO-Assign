@@ -1,0 +1,51 @@
+.Main{
+  width: 100%; 
+  display: flex;
+}
+.container{
+  width: 26%;
+  height: 100%;
+}
+
+.middleContainer{
+  width: 40%;
+}
+
+.rightContainer{
+  width:34%;
+  height: 100%;
+}
+
+.icons{
+  display: none;
+}
+.mobiletweet{
+  display: none;
+}
+@media screen and (max-width: 450px){
+
+.middleContainer{
+  width: auto;
+}
+.icons{
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 0;
+  height: 6vh;
+  width: 100%;
+  align-items: center;
+  z-index: 999;
+  font-size: larger;
+  background-color: rgb(255, 255, 255);
+}
+.mobiletweet{
+  display: unset;
+  bottom: 0;
+  position: fixed;
+  margin-left: 80%;
+  width: 10%;
+  margin-bottom: 7rem;
+  border-radius: 50%;
+}
+}

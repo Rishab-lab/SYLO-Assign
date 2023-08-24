@@ -1,0 +1,133 @@
+.imageWrapper{
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 15rem;
+}
+
+.card{
+    margin-right: 1rem;
+    position: relative;
+}
+.card:hover{
+    opacity: 1;
+}
+.card:first-child{
+    margin-left: 2rem;
+}
+.scrollContainer{
+    display: flex;
+    overflow-x: scroll;
+    padding: 2rem 0rem;
+}
+.scrollContainer::-webkit-scrollbar{
+    display: none;
+}
+.trainerName{
+    text-align: center;
+    font-weight: 700;
+}
+.primaryHeading{
+    text-align: center;
+    margin-top: 4rem;
+    color: #000000;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+.secondaryHeading{
+    text-align: center;
+    color: gray;
+    font-size: 1rem;
+    margin: 0;
+    padding-top: 0.5rem;
+}
+.rightArrow{
+    display: none;
+}
+.programName{
+    position: absolute;
+    top: 110%;
+    left: 33%;
+    transform: translate(-40%, -50%);
+    color: #383737;
+    font-family: sans-serif;
+    font-weight: 1000;
+}
+
+.primaryHeading1{
+    margin-top: -3rem;
+   text-align: center; 
+}
+
+@media screen and (min-width: 1624px)  {
+    .imageWrapper{
+      width: 15rem;
+
+    }
+    .card{
+        position: relative;
+        cursor: pointer;
+        }
+        .card:hover{
+            transform: scale(1.1);
+            transition: transform 1s; 
+        }
+    .scrollContainer{
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .scrollContainer::-webkit-scrollbar{
+        display: none;
+    }
+    .scrollContainer >*{
+        margin-right: 2rem;
+    }
+    .primaryHeading{
+        font-size: 2rem;
+        margin-top: 22rem;
+    }
+    .secondaryHeading{
+        font-size: 1.3rem;
+    }
+    .rightArrow{
+       position: absolute;
+       right: -8rem;
+       top: 45%;
+       color: #ffffff;
+       cursor: pointer;
+       display: unset;
+    }
+    .wrapper{
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .leftArrow{
+       composes : rightArrow;
+        left: -8rem;
+        z-index: 20;
+
+    }
+
+    .programName{
+        font-weight: 1000;
+        color: #2b2b2b;
+    }
+
+    .primaryHeading1{
+        font-size: 2rem;
+        margin-top: 2rem;
+        text-align: center;
+    }
+}

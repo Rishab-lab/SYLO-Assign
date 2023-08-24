@@ -1,0 +1,71 @@
+.feesCard{
+    border: 1px solid ;
+    color: black;
+    width: 9rem;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0 auto;
+    border: none;
+    height: 8rem;
+    border-radius: 30%;
+    background: linear-gradient(135deg, #6b9fff, #fff3d5);
+}
+
+.feesCard:hover{
+    cursor: pointer;
+    background: linear-gradient(135deg, #fff3d5, #6b9fff);
+    transition: 0.5s;
+}
+.passType{
+    font-weight: 900;
+    font-family: sans-serif;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+.pricing{
+    composes : passType ;
+    color: #00b000;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.wrapper>*{
+    margin-bottom: 1rem;
+}
+
+.timeSpan{
+    composes : passType ;
+    font-family: cursive;
+    margin-bottom: 3rem;
+}
+
+.tick{
+    margin-right: 1rem;
+}
+
+
+@media screen and (min-width: 1024px)  {
+
+    .feesCard {
+    border: 1px solid;
+    width: 7rem;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    padding-top: 10rem;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    border: none;
+    border-radius: 35%;
+    height: 8rem;
+    background: linear-gradient(135deg, #6b9fff, #fff3d5);
+}
+
+}
